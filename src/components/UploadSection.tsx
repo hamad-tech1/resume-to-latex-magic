@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Upload, FileText, Image, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const UploadSection = () => {
   const [dragActive, setDragActive] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleDrag = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -31,8 +33,8 @@ const UploadSection = () => {
 
     if (validFiles.length !== fileList.length) {
       toast({
-        title: "Invalid file type",
-        description: "Please upload only PDF or image files.",
+        title: t('upload.invalidFileType'),
+        description: t('upload.invalidFileTypeDesc'),
         variant: "destructive"
       });
     }
@@ -40,8 +42,8 @@ const UploadSection = () => {
     if (validFiles.length > 0) {
       setFiles(prev => [...prev, ...validFiles]);
       toast({
-        title: "Files uploaded successfully!",
-        description: `${validFiles.length} file(s) ready for processing.`
+        title: t('upload.uploadSuccess'),
+        description: t('upload.uploadSuccessDesc', { count: validFiles.length })
       });
     }
   }, [toast]);

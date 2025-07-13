@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "title": "Transform Your Resume",
+    "subtitle": "Into Magic",
+    "description": "Upload your PDF or image resume and watch our AI create a professionally formatted LaTeX CV in seconds",
+    "upload": "Upload",
+    "aiMagic": "AI Magic",
+    "preview": "Preview",
+    "download": "Download",
+    "startTransformation": "Start Your Transformation",
+    "seeHowItWorks": "See How It Works",
+    "trustedBy": "Trusted by professionals worldwide",
+    "aiPowered": "AI-Powered",
+    "secure": "Secure",
+    "fast": "Fast",
+    "professional": "Professional"
+  },
+  "process": {
+    "title": "How The Magic Works",
+    "description": "Transform your resume in just 4 simple steps. Our AI-powered process ensures professional results every time.",
+    "steps": {
+      "upload": {
+        "title": "Upload Your Resume",
+        "description": "Drop your PDF or image file and let us handle the rest. Our system accepts various formats."
+      },
+      "analyze": {
+        "title": "AI Analysis & Extraction",
+        "description": "Our advanced AI reads and understands your resume content, extracting key information intelligently."
+      },
+      "generate": {
+        "title": "LaTeX Generation",
+        "description": "Watch as your content transforms into a beautifully formatted LaTeX CV with professional styling."
+      },
+      "enjoy": {
+        "title": "Download & Enjoy",
+        "description": "Get your professionally formatted CV in PDF format, ready to impress employers worldwide."
+      }
+    },
+    "features": {
+      "aiPowered": {
+        "title": "AI-Powered",
+        "description": "Advanced machine learning algorithms ensure accurate content extraction and formatting."
+      },
+      "latexQuality": {
+        "title": "LaTeX Quality",
+        "description": "Professional typesetting with LaTeX ensures pixel-perfect formatting and print-ready output."
+      },
+      "instantResults": {
+        "title": "Instant Results",
+        "description": "Get your transformed CV in minutes, not hours. Fast processing without compromising quality."
+      }
+    }
+  },
+  "upload": {
+    "title": "Upload Your Resume",
+    "description": "Drop your resume file here or click to browse. We support PDF files and image formats (JPG, PNG).",
+    "dropFiles": "Drop files here or click to upload",
+    "supportedFormats": "Support for PDF, JPG, PNG files up to 10MB each",
+    "chooseFiles": "Choose Files",
+    "uploadedFiles": "Uploaded Files:",
+    "remove": "Remove",
+    "processFiles": "Process {count} File{count, plural, one {} other {s}} with AI Magic",
+    "invalidFileType": "Invalid file type",
+    "invalidFileTypeDesc": "Please upload only PDF or image files.",
+    "uploadSuccess": "Files uploaded successfully!",
+    "uploadSuccessDesc": "{count} file(s) ready for processing."
+  },
+  "pricing": {
+    "title": "Choose Your Magic Plan",
+    "description": "Transform your resume with our AI-powered LaTeX conversion. Choose the plan that fits your needs.",
+    "mostPopular": "Most Popular",
+    "perConversion": "per conversion",
+    "getStarted": "Get Started",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "description": "Perfect for individual use",
+        "features": [
+          "1 Resume Conversion",
+          "PDF Output",
+          "Basic LaTeX Template",
+          "Email Support",
+          "24-hour Processing"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Most popular choice",
+        "features": [
+          "3 Resume Conversions",
+          "Premium LaTeX Templates",
+          "High-Quality PDF Output",
+          "Priority Processing (1 hour)",
+          "Email & Chat Support",
+          "Revision Support"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For teams and businesses",
+        "features": [
+          "Unlimited Conversions",
+          "All Premium Templates",
+          "Bulk Processing",
+          "Instant Processing",
+          "Dedicated Support",
+          "Custom Templates",
+          "API Access"
+        ]
+      }
+    },
+    "notSure": "Not sure which plan to choose? Start with our Basic plan and upgrade anytime.",
+    "guarantees": {
+      "securePayment": "Secure Payment",
+      "instantDownload": "Instant Download",
+      "moneyBack": "Money-back Guarantee"
+    }
+  },
+  "common": {
+    "language": "Language",
+    "arabic": "Arabic",
+    "english": "English"
+  }
+}

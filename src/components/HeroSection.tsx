@@ -1,10 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Upload, Sparkles, FileText, Download } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-image.jpg";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Language Switcher */}
+      <div className="fixed top-4 right-4 z-50">
+        <LanguageSwitcher />
+      </div>
       {/* Background with gradient overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -25,13 +33,13 @@ const HeroSection = () => {
           {/* Main headline */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Transform Your Resume 
+              {t('hero.title')}
               <span className="block text-transparent bg-gradient-to-r from-primary-magic to-accent-foreground bg-clip-text">
-                Into Magic
+                {t('hero.subtitle')}
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Upload your PDF or image resume and watch our AI create a professionally formatted LaTeX CV in seconds
+              {t('hero.description')}
             </p>
           </div>
 
@@ -41,25 +49,25 @@ const HeroSection = () => {
               <div className="w-12 h-12 bg-primary-magic/20 rounded-full flex items-center justify-center mx-auto">
                 <Upload className="w-6 h-6 text-primary-magic" />
               </div>
-              <p className="text-sm text-white/80">Upload</p>
+              <p className="text-sm text-white/80">{t('hero.upload')}</p>
             </div>
             <div className="text-center space-y-2">
               <div className="w-12 h-12 bg-primary-magic/20 rounded-full flex items-center justify-center mx-auto">
                 <Sparkles className="w-6 h-6 text-primary-magic animate-magic-glow" />
               </div>
-              <p className="text-sm text-white/80">AI Magic</p>
+              <p className="text-sm text-white/80">{t('hero.aiMagic')}</p>
             </div>
             <div className="text-center space-y-2">
               <div className="w-12 h-12 bg-primary-magic/20 rounded-full flex items-center justify-center mx-auto">
                 <FileText className="w-6 h-6 text-primary-magic" />
               </div>
-              <p className="text-sm text-white/80">Preview</p>
+              <p className="text-sm text-white/80">{t('hero.preview')}</p>
             </div>
             <div className="text-center space-y-2">
               <div className="w-12 h-12 bg-primary-magic/20 rounded-full flex items-center justify-center mx-auto">
                 <Download className="w-6 h-6 text-primary-magic" />
               </div>
-              <p className="text-sm text-white/80">Download</p>
+              <p className="text-sm text-white/80">{t('hero.download')}</p>
             </div>
           </div>
 
@@ -67,21 +75,21 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="magic" size="lg" className="w-full sm:w-auto">
               <Upload className="w-5 h-5 mr-2" />
-              Start Your Transformation
+              {t('hero.startTransformation')}
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10">
-              See How It Works
+              {t('hero.seeHowItWorks')}
             </Button>
           </div>
 
           {/* Trust indicators */}
           <div className="pt-8 text-white/70">
-            <p className="text-sm mb-4">Trusted by professionals worldwide</p>
+            <p className="text-sm mb-4">{t('hero.trustedBy')}</p>
             <div className="flex justify-center items-center space-x-8 text-xs">
-              <span>✨ AI-Powered</span>
-              <span>🔒 Secure</span>
-              <span>⚡ Fast</span>
-              <span>📄 Professional</span>
+              <span>✨ {t('hero.aiPowered')}</span>
+              <span>🔒 {t('hero.secure')}</span>
+              <span>⚡ {t('hero.fast')}</span>
+              <span>📄 {t('hero.professional')}</span>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Star, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const PricingSection = () => {
+  const { t } = useTranslation();
   const plans = [
     {
       name: "Basic",

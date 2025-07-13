@@ -1,33 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Upload, Brain, FileText, Download, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ProcessSection = () => {
+  const { t } = useTranslation();
+
   const steps = [
     {
       icon: Upload,
-      title: "Upload Your Resume",
-      description: "Drop your PDF or image file and let us handle the rest. Our system accepts various formats.",
+      title: t('process.steps.upload.title'),
+      description: t('process.steps.upload.description'),
       color: "text-blue-500",
       bgColor: "bg-blue-500/10"
     },
     {
       icon: Brain,
-      title: "AI Analysis & Extraction",
-      description: "Our advanced AI reads and understands your resume content, extracting key information intelligently.",
+      title: t('process.steps.analyze.title'),
+      description: t('process.steps.analyze.description'),
       color: "text-primary-magic",
       bgColor: "bg-primary-magic/10"
     },
     {
       icon: FileText,
-      title: "LaTeX Generation",
-      description: "Watch as your content transforms into a beautifully formatted LaTeX CV with professional styling.",
+      title: t('process.steps.generate.title'),
+      description: t('process.steps.generate.description'),
       color: "text-green-500",
       bgColor: "bg-green-500/10"
     },
     {
       icon: Download,
-      title: "Download & Enjoy",
-      description: "Get your professionally formatted CV in PDF format, ready to impress employers worldwide.",
+      title: t('process.steps.enjoy.title'),
+      description: t('process.steps.enjoy.description'),
       color: "text-orange-500",
       bgColor: "bg-orange-500/10"
     }
@@ -40,10 +43,10 @@ const ProcessSection = () => {
           {/* Header */}
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              How The Magic Works
+              {t('process.title')}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Transform your resume in just 4 simple steps. Our AI-powered process ensures professional results every time.
+              {t('process.description')}
             </p>
           </div>
 
@@ -91,9 +94,9 @@ const ProcessSection = () => {
               <div className="w-12 h-12 bg-primary-magic/10 rounded-full flex items-center justify-center mx-auto">
                 <Brain className="w-6 h-6 text-primary-magic" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground">AI-Powered</h4>
+              <h4 className="text-lg font-semibold text-foreground">{t('process.features.aiPowered.title')}</h4>
               <p className="text-muted-foreground">
-                Advanced machine learning algorithms ensure accurate content extraction and formatting.
+                {t('process.features.aiPowered.description')}
               </p>
             </div>
             
@@ -101,9 +104,9 @@ const ProcessSection = () => {
               <div className="w-12 h-12 bg-primary-magic/10 rounded-full flex items-center justify-center mx-auto">
                 <FileText className="w-6 h-6 text-primary-magic" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground">LaTeX Quality</h4>
+              <h4 className="text-lg font-semibold text-foreground">{t('process.features.latexQuality.title')}</h4>
               <p className="text-muted-foreground">
-                Professional typesetting with LaTeX ensures pixel-perfect formatting and print-ready output.
+                {t('process.features.latexQuality.description')}
               </p>
             </div>
             
@@ -111,9 +114,9 @@ const ProcessSection = () => {
               <div className="w-12 h-12 bg-primary-magic/10 rounded-full flex items-center justify-center mx-auto">
                 <Download className="w-6 h-6 text-primary-magic" />
               </div>
-              <h4 className="text-lg font-semibold text-foreground">Instant Results</h4>
+              <h4 className="text-lg font-semibold text-foreground">{t('process.features.instantResults.title')}</h4>
               <p className="text-muted-foreground">
-                Get your transformed CV in minutes, not hours. Fast processing without compromising quality.
+                {t('process.features.instantResults.description')}
               </p>
             </div>
           </div>
