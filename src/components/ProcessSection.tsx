@@ -80,7 +80,7 @@ const ProcessSection = () => {
                 
                 {/* Arrow connector */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                  <div className="hidden lg:block absolute top-1/2 -right-7 transform -translate-y-1/2">
                     <ArrowRight className="w-6 h-6 text-primary-magic" />
                   </div>
                 )}

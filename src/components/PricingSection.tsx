@@ -8,7 +8,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: "Basic",
-      price: "$9.99",
+      price: "$4.99",
       description: "Perfect for individual use",
       features: [
         "1 Resume Conversion",
@@ -21,7 +21,7 @@ const PricingSection = () => {
     },
     {
       name: "Professional", 
-      price: "$19.99",
+      price: "$9.99",
       description: "Most popular choice",
       features: [
         "3 Resume Conversions",
@@ -35,7 +35,7 @@ const PricingSection = () => {
     },
     {
       name: "Enterprise",
-      price: "$49.99", 
+      price: "$14.99", 
       description: "For teams and businesses",
       features: [
         "Unlimited Conversions",
