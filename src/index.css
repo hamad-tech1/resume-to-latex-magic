@@ -19,6 +19,9 @@ All colors MUST be HSL.
 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
+    
+    --primary-magic: 261 65% 58%;
+    --primary-magic-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,15 +29,29 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 261 65% 96%;
+    --accent-foreground: 261 65% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 261 65% 58%;
+
+    /* Magic gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(222.2 47.4% 11.2%), hsl(261 65% 25%));
+    --gradient-magic: linear-gradient(135deg, hsl(261 65% 58%), hsl(261 65% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    
+    /* Professional shadows */
+    --shadow-soft: 0 2px 10px hsl(222.2 47.4% 11.2% / 0.1);
+    --shadow-magic: 0 8px 32px hsl(261 65% 58% / 0.2);
+    --shadow-card: 0 4px 20px hsl(222.2 47.4% 11.2% / 0.08);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-magic: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.5rem;
 

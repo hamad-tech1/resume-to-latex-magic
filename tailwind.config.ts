@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					magic: 'hsl(var(--primary-magic))',
+					'magic-foreground': 'hsl(var(--primary-magic-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -84,11 +86,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'magic-float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'magic-glow': {
+					'0%': { boxShadow: '0 0 20px hsl(261 65% 58% / 0.3)' },
+					'100%': { boxShadow: '0 0 40px hsl(261 65% 58% / 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'magic-float': 'magic-float 6s ease-in-out infinite',
+				'magic-glow': 'magic-glow 2s ease-in-out infinite alternate'
 			}
 		}
 	},
